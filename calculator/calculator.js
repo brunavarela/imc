@@ -24,11 +24,11 @@ const updateDisplay = (text) => {
     }
 }
 
-const pedingOperator = () => operator !== undefined;
+const pendingOperator = () => operator !== undefined;
 
 const calculate = () => {
     // se o operador não for igual a indefinido...
-    if (pedingOperator()) {
+    if (pendingOperator()) {
         // replace vai achar a virgula e trocar para ponto que é reconhecido no JS
         const currentNumber = parseFloat(display.textContent.replace(',', '.'));
         newNumber = true;
